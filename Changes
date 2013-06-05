@@ -2,5 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+v0.0.2    2013-06-06 00:38:14 Asia/Tokyo
+    [Non-functional changes]
+        - Add missing prereqs.
+
 v0.0.1    2012-10-24 07:58:31 Asia/Tokyo
-    * Initial release.
+    - Initial release.
