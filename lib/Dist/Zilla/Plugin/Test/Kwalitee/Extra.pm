@@ -3,6 +3,7 @@ package Dist::Zilla::Plugin::Test::Kwalitee::Extra;
 use strict;
 use warnings;
 
+# ABSTRACT: Dist::Zilla plugin for Test::Kwalitee::Extra
 # VERSION
 
 use Moose;
@@ -39,6 +40,7 @@ sub gather_files {
 __PACKAGE__->meta->make_immutable;
 no Moose;
 1;
+
 =pod
 
 =head1 NAME

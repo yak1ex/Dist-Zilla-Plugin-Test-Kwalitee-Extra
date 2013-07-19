@@ -2,6 +2,10 @@
 
 Dist::Zilla::Plugin::Test::Kwalitee::Extra - Dist::Zilla plugin for Test::Kwalitee::Extra
 
+# VERSION
+
+version v0.0.2
+
 # SYNOPSIS
 
 In your `dist.ini`,
@@ -38,12 +42,27 @@ The following methods are overridden.
 
     Create `xt/release/kwalitee.t`.
 
+# NAME
+
+Dist::Zilla::Plugin::Test::Kwalitee::Extra - Dist::Zilla plugin for Test::Kwalitee::Extra
+
 # AUTHORS
 
 - [Dist::Zilla::Plugin::Test::Kwalitee](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::Test::Kwalitee) authors
 - Yasutaka ATARASHI <yakex@cpan.org>
 
 # LICENSE
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+# AUTHOR
+
+Yasutaka ATARASHI <yakex@cpan.org>
+
+# COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Yasutaka ATARASHI.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
