@@ -2,6 +2,13 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+v0.1.0    2013-08-05 22:03:00 Asia/Tokyo
+    [Functional Change]
+        - Check validity for Module::CPANTS::Analyse from 0.88 to 0.90_02.
+            - Adjust available indicators in tests.
+    [Non-functional Change]
+        - Use DZPB::Author::YAKEX.
+
 v0.0.2    2013-06-06 00:38:14 Asia/Tokyo
     [Non-functional changes]
         - Add missing prereqs.
