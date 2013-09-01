@@ -22,11 +22,7 @@ sub gather_files {
   if ( @{ $self->arg } > 0 ) {
 
     my $arg = join ' ', @{ $self->arg };
-
-    $tests = qq[eval {
-  require Test::Kwalitee::Extra;
-  Test::Kwalitee::Extra->import( qw( $arg ) );
-};];
+    $tests = qq[eval "use Test::Kwalitee::Extra qw( $arg )"];
 
   }
   require Dist::Zilla::File::InMemory;
@@ -134,6 +130,8 @@ ___[ xt/release/kwalitee.t ]___
 use strict;
 use warnings;
 use Test::More;   # needed to provide plan.
-{{ $tests }}
 
+eval { require Test::Kwalitee::Extra };
 plan skip_all => "Test::Kwalitee::Extra required for testing kwalitee: $@" if $@;
+
+{{ $tests }}
