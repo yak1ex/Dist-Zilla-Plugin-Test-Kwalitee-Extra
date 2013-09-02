@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+v0.1.2    2013-09-02 23:39:32 Asia/Tokyo
+    - Avoid plan twice error by separating require and import (close gh-5).
+
 v0.1.0    2013-08-05 22:03:00 Asia/Tokyo
     [Functional Change]
         - Check validity for Module::CPANTS::Analyse from 0.88 to 0.90_02.
