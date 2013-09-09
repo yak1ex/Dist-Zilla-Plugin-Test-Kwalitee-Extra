@@ -4,7 +4,7 @@ use warnings;
 use version 0.77;
 use Dist::Zilla::Tester;
 use Path::Class;
-use Test::More;
+use Test::More tests => 15;
 use Capture::Tiny qw( capture );
 
 require Module::CPANTS::Analyse;
@@ -78,4 +78,3 @@ if(new_cpants_analyse()) {
 if ( not $success ) {
   diag explain { 'stdout' => $output, 'stderr' => $error, 'result' => $result, 'flags' => $errflags, };
 }
-done_testing;
