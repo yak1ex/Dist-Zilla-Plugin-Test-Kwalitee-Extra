@@ -2,14 +2,21 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+v0.1.3    2013-09-10 02:15:17 Asia/Tokyo
+    [Functional changes]
+        - Bump the version of Test::Kwalitee::Extra to fix the bug for test counts.
+    [Non-functional changes]
+        - Add a missing test prereq on version pragma.
+        - Specify test counts explicitly instead of done_testing().
+
 v0.1.2    2013-09-02 23:39:32 Asia/Tokyo
     - Avoid plan twice error by separating require and import (close gh-5).
 
 v0.1.0    2013-08-05 22:03:00 Asia/Tokyo
-    [Functional Change]
+    [Functional changes]
         - Check validity for Module::CPANTS::Analyse from 0.88 to 0.90_02.
             - Adjust available indicators in tests.
-    [Non-functional Change]
+    [Non-functional changes]
         - Use DZPB::Author::YAKEX.
 
 v0.0.2    2013-06-06 00:38:14 Asia/Tokyo
