@@ -50,6 +50,11 @@ In your C<dist.ini>,
   [Test::Kwalitee::Extra]
   arg = !has_example
 
+If you want to avoid network access
+
+  [Test::Kwalitee::Extra]
+  arg = !prereq_matches_use
+
 =head1 DESCRIPTION
 
 This module is a L<Dist::Zilla> plugin for L<Test::Kwalitee::Extra>. It creates C<xt/release/kwalitee.t> to call L<Test::Kwalitee::Extra>.
@@ -101,6 +106,24 @@ Declare C<arg>.
 Create C<xt/release/kwalitee.t>.
 
 =back
+
+=head1 CAVEATS
+
+An optional indicator C<prereq_matches_use> and an experimental indicator C<build_prereq_matches_use> require HTTP access to L<MetaCPAN site|https://metacpan.org/>. If you want to avoid it, you can specify excluded indicators like
+
+  # Avoid network access
+  [Test::Kwalitee::Extra]
+  arg = !prereq_matches_use
+
+  # or, when experimental enabled
+  [Test::Kwalitee::Extra]
+  arg = :experimental !prereq_matches_use !build_prereq_matches_use
+
+Or mitigate wait by tentative failures to reduce retry counts like
+
+  # Try just one time for each query
+  [Test::Kwalitee::Extra]
+  arg = :retry 1
 
 =head1 AUTHORS
 
