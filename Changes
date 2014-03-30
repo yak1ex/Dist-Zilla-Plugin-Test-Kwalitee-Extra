@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+v0.2.1    2014-03-30 13:15:25 Asia/Tokyo
+    [Non-functional changes]
+        - Add caution and workaround for network access in POD (gh-6).
+
 v0.2.0    2013-09-26 16:24:41 Asia/Tokyo
     [Functional changes]
         - Bump the version of Test::Kwalitee::Extra to use query retry.
